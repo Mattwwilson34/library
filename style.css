@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Work+Sans&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: aliceblue;
+    font-family: 'Noto Sans Mono', monospace;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.card {
+    height: 300px;
+    width: 275px;
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(228, 208, 208, 0.606);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.card h3,
+h4 {
+    margin: 6px;
+}
+
+.card .btn {
+    margin-top: 20px;
+}
+
+.read {
+    background-color: #04d88b;
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type='text'] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+.form-container input[type='checkbox'] {
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.form-container input[type='radio'] {
+    margin-bottom: 15px;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type='text']:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn,
+.btn {
+    background-color: #04d88b;
+    color: white;
+    padding: 16px 20px;
+    outline: 0;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel,
+.delete {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover,
+.btn:hover {
+    opacity: 1;
+}
+.did-not-read {
+    background-color: red;
+}
