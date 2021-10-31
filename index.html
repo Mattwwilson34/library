@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="wrapper"></div>
-        <button class="open-button" onclick="openForm()">Click here to Add another Book</button>
+        <button class="open-button" onclick="DisplayController.openForm()">Click here to Add another Book</button>
         <div class="form-popup" id="myForm">
             <form action="/" class="form-container">
                 <h1>Add Book</h1>
@@ -23,7 +23,7 @@
                 <input type="text" placeholder="Read (yes/no)" id="read" name="read" required />
 
                 <button type="button" class="btn add-book-btn">Add Book</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                <button type="button" class="btn cancel" onclick="DisplayController.closeForm()">Close</button>
             </form>
         </div>
         <script src="script.js"></script>
