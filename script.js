@@ -119,7 +119,7 @@ const DisplayController = {
         if (book.checkIfRead() === 'Unread') {
             this.readBtn.classList = 'btn did-not-read';
         } else {
-            this.readBtn.classList = 'btn did-not-read';
+            this.readBtn.classList = 'btn read';
             this.card.classList.toggle('read');
         }
     },
@@ -141,10 +141,12 @@ const DisplayController = {
         Library.books[bookIndex].toggleRead();
         bookCard.classList.toggle('read');
         if (readBtn.textContent === 'Read') {
-            readBtn.textContent = 'Unread';
             readBtn.style.backgroundColor = 'red';
+            readBtn.style.color = 'white';
+            readBtn.textContent = 'Unread';
         } else {
-            readBtn.style.backgroundColor = '#04aa6d';
+            readBtn.style.backgroundColor = '#04d88b';
+            readBtn.style.color = 'black';
             readBtn.textContent = 'Read';
         }
     },
